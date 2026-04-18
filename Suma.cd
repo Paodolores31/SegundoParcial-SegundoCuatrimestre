@@ -1,0 +1,24 @@
+using System;
+using System.Linq;
+
+namespace Suma;
+
+public static class Program
+{
+    public static void Main()
+    {
+        int suma = 0;
+        for (int i = 1; i <= 100; i++)
+        {
+            // Muestra la operación: suma anterior + número actual = nueva suma
+            Console.WriteLine(suma + " + " + i + " = " + (suma + i));
+
+            // Actualiza la suma
+            suma = suma + i;
+        }
+        Console.WriteLine("\nLa suma total final es: " + suma);
+
+
+    }
+}
+
